@@ -1,0 +1,319 @@
+/* Custom Design Tokens */
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #2563eb;
+  --accent-hover: #1d4ed8;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #334155;
+  --text-dark: #0f172a;
+  --border-color: #e2e8f0;
+  --success-color: #16a34a;
+  --warning-color: #d97706;
+  --danger-color: #dc2626;
+  --radius: 12px;
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding-bottom: 40px;
+}
+
+/* Header */
+.app-header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.5rem 2rem;
+}
+
+.header-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.brand h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.brand h1 span {
+  color: #60a5fa;
+}
+
+.badge {
+  background-color: rgba(255, 255, 255, 0.15);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Container */
+.main-container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Navigation Tabs */
+.module-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.nav-btn {
+  background: var(--card-bg);
+  border: 2px solid var(--border-color);
+  padding: 0.85rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-main);
+}
+
+.nav-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.nav-btn.active {
+  background-color: var(--accent-color);
+  color: #fff;
+  border-color: var(--accent-color);
+  box-shadow: var(--shadow);
+}
+
+/* Controls Bar */
+.controls-bar {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.mode-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-left: 0.25rem;
+}
+
+.mode-btn.active {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Module Card */
+.module-card {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+}
+
+.module-header {
+  border-bottom: 2px solid var(--bg-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.module-header h2 {
+  color: var(--text-dark);
+  font-size: 1.75rem;
+}
+
+/* Activity Selector */
+.activity-selector {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.act-tab {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-main);
+  border-bottom: 3px solid transparent;
+}
+
+.act-tab.active {
+  color: var(--accent-color);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Exercise Elements */
+.passage-box, .prompt-box, .transcript-box {
+  background-color: #f1f5f9;
+  border-left: 4px solid var(--accent-color);
+  padding: 1.25rem;
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.fill-gaps-list {
+  padding-left: 1.25rem;
+  margin: 1.5rem 0;
+}
+
+.fill-gaps-list li {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.input-gap, .select-input {
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-gap:focus, .select-input:focus {
+  border-color: var(--accent-color);
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+}
+
+.btn-primary, .btn-submit {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary:hover, .btn-submit:hover {
+  background-color: var(--accent-hover);
+}
+
+.btn-secondary, .btn-hint, .btn-copy {
+  background-color: #e2e8f0;
+  color: var(--text-dark);
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.btn-copy {
+  background-color: #f1f5f9;
+  border: 1px solid var(--border-color);
+}
+
+.btn-record {
+  background-color: var(--danger-color);
+  color: white;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-stop {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.65rem 1.25rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Editor & Textarea */
+.essay-input, .transcript-input {
+  width: 100%;
+  min-height: 180px;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-top: 0.5rem;
+}
+
+.editor-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.word-count {
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Timer Banners */
+.timer-banner, .timer-display, .speaking-timer-widget {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  color: #b45309;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Feedback Panel */
+.feedback-panel {
+  margin-top: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 6px;
+  background-color: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: #166534;
+}
+
+/* Utility */
+.hidden { display: none !important; }
+.sources-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.source-card { background: #fff; padding: 1rem; border: 1px solid var(--border-color); border-radius: 6px; }
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .app-header { text-align: center; }
+  .header-container { justify-content: center; }
+  .controls-bar { flex-direction: column; align-items: flex-start; }
+}
