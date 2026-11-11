@@ -1,420 +1,404 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Foundry English Coach — C1 (Independent C1 practice)</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;AI Foundry English Coach — C1 (Independent C1 practice)&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="stylesheet" href="style.css"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Header Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;header class="app-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="header-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="brand"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;AI Foundry English Coach &lt;span&gt;— C1&lt;/span&gt;&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span class="badge"&gt;Independent C1 practice&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="user-welcome"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Welcome back, &lt;strong&gt;Gio&lt;/strong&gt;! Ready to master the Oxford Test of English Advanced?&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Main Container --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;main class="main-container"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation Tabs --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav class="module-nav" aria-label="Skill Modules"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-btn active" data-module="listening"&gt;🎧 Listening&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-btn" data-module="reading"&gt;📖 Reading&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-btn" data-module="writing"&gt;✍️ Writing&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;button class="nav-btn" data-module="speaking"&gt;🎙️ Speaking&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Global Controls: Mode Toggle &amp; Progress --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="controls-bar"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="mode-selector"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;label class="toggle-label"&gt;Mode:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="mode-practice-btn" class="mode-btn active"&gt;Practice Mode (Hints)&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="mode-timed-btn" class="mode-btn"&gt;Timed Challenge&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="progress-display"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;span&gt;Session Score: &lt;strong id="global-score"&gt;0&lt;/strong&gt; pts&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Module 1: Listening --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="module-listening" class="module-card active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;header class="module-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Listening Module&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Practice short talks, note completion, and speaker matching on complex topics.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="activity-selector"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab active" data-target="list-act1"&gt;Part 1: Note Completion&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab" data-target="list-act2"&gt;Part 2: Multiple Matching&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Listening Act 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="list-act1" class="activity-content active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="timer-banner hidden" id="timer-list-1"&gt;Time Left: &lt;span class="time-val"&gt;--:--&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="audio-player-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="btn-play-list1" class="btn-primary"&gt;▶ Play Lecture Audio&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="btn-script-list1" class="btn-secondary"&gt;📜 View Transcript (Fallback)&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="audio-plays-count" id="plays-list1"&gt;Plays remaining: 2&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="script-box-list1" class="transcript-box hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Audio Script — Lecture on AI in Higher Education&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;em&gt;"While traditionalists express valid concerns regarding academic integrity in the era of generative AI, higher education institutions must pivot from outright prohibition toward algorithmic literacy. Integrating large language models into research methodology allows undergraduates to synthesize vast datasets rapidly. However, the cognitive heavy lifting—critical evaluation, contextual nuance, and ethical framing—remains uniquely human. Universities that fail to adapt risk producing graduates ill-equipped for automated workplaces."&lt;/em&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="exercise-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Complete the lecture notes with 1-3 words:&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;ol class="fill-gaps-list"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Instead of banning AI, universities must focus on fostering &lt;input type="text" id="gap1" class="input-gap" placeholder="Type answer..."&gt; among students.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Generative AI models enable undergraduates to quickly &lt;input type="text" id="gap2" class="input-gap" placeholder="Type answer..."&gt; large volumes of data.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Critical evaluation, ethical framing, and contextual nuance represent the necessary &lt;input type="text" id="gap3" class="input-gap" placeholder="Type answer..."&gt; that humans provide.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ol&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="hint-box hidden" id="hint-list1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>💡 &lt;strong&gt;Hint:&lt;/strong&gt; Listen for keywords like "pivot", "synthesize", and "cognitive heavy lifting".</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn-hint" id="btn-hint-list1"&gt;Get Hint&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn-submit" id="btn-sub-list1"&gt;Submit Answers&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="feedback-panel hidden" id="fb-list1"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Listening Act 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="list-act2" class="activity-content hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="audio-player-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="btn-play-list2" class="btn-primary"&gt;▶ Play Dialogue Audio&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="btn-script-list2" class="btn-secondary"&gt;📜 View Transcript (Fallback)&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;span class="audio-plays-count" id="plays-list2"&gt;Plays remaining: 2&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="script-box-list2" class="transcript-box hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Audio Script — Dialogue on Hybrid Work Dynamics&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Speaker A (Elena):&lt;/strong&gt; "Hybrid models sound ideal on paper, but they frequently erode team cohesion. Asynchronous communication often breeds ambiguity, leaving junior staff without immediate mentorship."&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Speaker B (Marcus):&lt;/strong&gt; "I disagree regarding cohesion. The autonomy gained drastically enhances mental well-being and productivity. Mentorship simply requires intentional digital structure rather than proximity."&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="exercise-body"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Match the speaker to the statement:&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="matching-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;1. Believes remote flexibility boosts performance and well-being when given trust.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;select id="match1" class="select-input"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value=""&gt;-- Select Speaker --&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="A"&gt;Speaker A (Elena)&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="B"&gt;Speaker B (Marcus)&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="matching-item"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;2. Expresses concern about the lack of spontaneous guidance for newer employees.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;select id="match2" class="select-input"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value=""&gt;-- Select Speaker --&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="A"&gt;Speaker A (Elena)&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="B"&gt;Speaker B (Marcus)&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn-submit" id="btn-sub-list2"&gt;Submit Matching&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="feedback-panel hidden" id="fb-list2"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Module 2: Reading --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="module-reading" class="module-card hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;header class="module-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Reading Module&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Master text structure, gapped sentences, and high-level inference analysis.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="activity-selector"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab active" data-target="read-act1"&gt;Part 1: Gapped Text&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab" data-target="read-act2"&gt;Part 2: Stance &amp; Inference&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Reading Act 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="read-act1" class="activity-content active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="passage-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;The Surveillance Paradox in Modern Social Media&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Modern digital platforms offer unprecedented connectivity, yet they extract a steep toll on individual privacy. Users willingly trade personal data for convenience and social validation. &lt;span class="gap-placeholder"&gt;[ Gap 1 ]&lt;/span&gt;. Consequently, privacy policies have expanded into unreadable legalistic documents designed to obfuscate rather than inform.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Regulatory frameworks such as GDPR attempt to curb corporate overreach. &lt;span class="gap-placeholder"&gt;[ Gap 2 ]&lt;/span&gt;. Without fundamental changes in business models, data monetization will remain the dominant digital standard.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="options-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h4&gt;Select the sentence that fits each gap:&lt;/h4&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="gap-selection"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;strong&gt;Gap 1:&lt;/strong&gt;&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;select id="read-gap1" class="select-input"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value=""&gt;-- Choose sentence --&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="A"&gt;A) This transactional relationship normalized the monetization of private behavior.&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="B"&gt;B) Social media algorithms rarely focus on targeted advertising.&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="C"&gt;C) Digital detox programs have become mandatory across tech firms.&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="gap-selection"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;strong&gt;Gap 2:&lt;/strong&gt;&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;select id="read-gap2" class="select-input"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value=""&gt;-- Choose sentence --&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="A"&gt;A) However, enforcement mechanisms often lag behind rapid technological advancements.&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="B"&gt;B) Therefore, users stop using smartphones entirely in modern cities.&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;option value="C"&gt;C) These platforms guarantee total transparency without commercial intent.&lt;/option&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/select&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="hint-box hidden" id="hint-read1"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>💡 &lt;strong&gt;Hint:&lt;/strong&gt; Look for pronoun references like "This transactional relationship" linking back to trading data for convenience.</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-hint" id="btn-hint-read1"&gt;Get Hint&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-submit" id="btn-sub-read1"&gt;Check Answers&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feedback-panel hidden" id="fb-read1"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Reading Act 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="read-act2" class="activity-content hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="passage-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Author Stance: Technological Determinism vs. Human Agency&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;em&gt;"To argue that technology unilaterally dictates societal evolution is to succumb to a defeatist philosophy. While generative algorithms redefine industry standards, their trajectory remains tethered to policy decisions, ethical constraints, and collective consumer choices. Algorithmic efficiency must not be conflated with inevitability."&lt;/em&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="mcq-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="question-text"&gt;&lt;strong&gt;1. What is the author's primary intention in this passage?&lt;/strong&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label class="radio-option"&gt;&lt;input type="radio" name="read-mcq1" value="A"&gt; A) To warn against using generative algorithms in corporate settings.&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label class="radio-option"&gt;&lt;input type="radio" name="read-mcq1" value="B"&gt; B) To argue that human decisions and policies still control technological progress.&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label class="radio-option"&gt;&lt;input type="radio" name="read-mcq1" value="C"&gt; C) To advocate for total automation of regulatory policymaking.&lt;/label&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p class="question-text"&gt;&lt;strong&gt;2. What does the phrase "conflated with inevitability" imply?&lt;/strong&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label class="radio-option"&gt;&lt;input type="radio" name="read-mcq2" value="A"&gt; A) People wrongly assume fast algorithmic progress cannot be directed or stopped.&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label class="radio-option"&gt;&lt;input type="radio" name="read-mcq2" value="B"&gt; B) Technology is guaranteed to solve all economic challenges automatically.&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;label class="radio-option"&gt;&lt;input type="radio" name="read-mcq2" value="C"&gt; C) Efficiency should be the sole metric for evaluating software.&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-submit" id="btn-sub-read2"&gt;Check Answers&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feedback-panel hidden" id="fb-read2"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Module 3: Writing --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="module-writing" class="module-card hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;header class="module-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Writing Module&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Develop high-level academic essays and synthesis texts under official timing constraints.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="activity-selector"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab active" data-target="write-act1"&gt;Part 1: Essay (220–280 words)&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab" data-target="write-act2"&gt;Part 2: Synthesis (80–100 words)&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Writing Act 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="write-act1" class="activity-content active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="prompt-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Task: Opinion Essay&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;&lt;strong&gt;Prompt:&lt;/strong&gt; Some argue that the widespread implementation of AI tools in higher education undermines intellectual independence. Write an essay evaluating this view. You must use at least &lt;strong&gt;two&lt;/strong&gt; of the following points:&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Automated critical analysis vs. personal research effort&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;Equal access to learning resources&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;The risk of over-reliance on automated summaries&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="task-meta"&gt;⏱ Target Time: &lt;strong&gt;30:00&lt;/strong&gt; | Target Length: &lt;strong&gt;220–280 words&lt;/strong&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="editor-area"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timer-display" id="timer-write1"&gt;Time Remaining: &lt;span&gt;30:00&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-secondary" id="btn-start-write1"&gt;Start Timer&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;textarea id="text-write1" class="essay-input" placeholder="Type your C1 essay here..."&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="editor-footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="word-count" id="wc-write1"&gt;Word Count: 0 words&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn-copy" id="btn-copy-write1"&gt;📋 Copy for Feedback&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-submit" id="btn-sub-write1"&gt;Evaluate Writing&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feedback-panel hidden" id="fb-write1"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Writing Act 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="write-act2" class="activity-content hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="prompt-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Task: Synthesis Report&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Read the two sources below and write a synthesis summarizing the key arguments in &lt;strong&gt;80–100 words&lt;/strong&gt; within &lt;strong&gt;20 minutes&lt;/strong&gt;.&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="sources-grid"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="source-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;h4&gt;Source 1: Academic Textbook Excerpt&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;p&gt;&lt;em&gt;"Remote working frameworks eliminate commuting stress and offer geographic flexibility. However, operational success hinges entirely on intentional communication architecture and asynchronous documentation to prevent professional isolation."&lt;/em&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="source-card"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;h4&gt;Source 2: Lecture Transcript&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;p&gt;&lt;em&gt;"While flexibility is praised, long-term remote setups frequently erode informal networking and serendipitous innovation. Without physical proximity, organic mentorship becomes difficult to sustain."&lt;/em&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="editor-area"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timer-display" id="timer-write2"&gt;Time Remaining: &lt;span&gt;20:00&lt;/span&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-secondary" id="btn-start-write2"&gt;Start Timer&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;textarea id="text-write2" class="essay-input" placeholder="Type your 80-100 word synthesis..."&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="editor-footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="word-count" id="wc-write2"&gt;Word Count: 0 words&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn-copy" id="btn-copy-write2"&gt;📋 Copy for Feedback&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="actions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-submit" id="btn-sub-write2"&gt;Evaluate Synthesis&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="feedback-panel hidden" id="fb-write2"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Module 4: Speaking --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="module-speaking" class="module-card hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;header class="module-header"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;Speaking Module&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Record your answers, review auto-transcriptions, and compare with model C1 responses.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div class="activity-selector"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab active" data-target="speak-act1"&gt;Part 1: Voicemail Message&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab" data-target="speak-act2"&gt;Part 2: Oral Synthesis&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;button class="act-tab" data-target="speak-act3"&gt;Part 3: Extended Debate&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Speaking Act 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="speak-act1" class="activity-content active"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="prompt-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Task 1: Delicate Situation Voicemail&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Leave a voicemail for a project partner explaining tactfully that their reliance on generative AI for a joint proposal has introduced factual inaccuracies that need immediate revision before tomorrow's client presentation.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="recording-studio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="recorder-controls"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="rec-btn-1" class="btn-record"&gt;🎙️ Start Recording&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="stop-btn-1" class="btn-stop" disabled&gt;⏹️ Stop&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="recording-status" id="rec-status-1"&gt;Status: Idle&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;audio id="audio-playback-1" controls class="audio-preview hidden"&gt;&lt;/audio&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="transcription-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;Editable Speech-to-Text Transcript:&lt;/label&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;textarea id="transcript-1" class="transcript-input" placeholder="Your live transcription will appear here. You can edit it manually if needed..."&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="actions-inline"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button class="btn-copy" id="btn-copy-speak1"&gt;📋 Copy for Feedback&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="model-answer-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button id="btn-model-1" class="btn-secondary"&gt;🎧 Play Model Answer (C1 Standard)&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="model-text-1" class="model-text hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;p&gt;&lt;strong&gt;C1 Exemplar:&lt;/strong&gt; &lt;em&gt;"Hi Alex, I hope you're having a productive afternoon. I was reviewing the draft for tomorrow's client presentation, and while the structure looks remarkably sleek, I noticed a few factual discrepancies in the market analysis section. It appears some AI-generated statistics were included without verification. Given what's at stake, could we spend 15 minutes this evening aligning those figures? I'm confident we can polish it quickly. Give me a call when you see this."&lt;/em&gt;&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Speaking Act 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="speak-act2" class="activity-content hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="prompt-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Task 2: Oral Synthesis&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Synthesize two opinions regarding mandatory data privacy regulations for social networks.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timing-rules"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;⏱ Prep Time: &lt;strong&gt;40s&lt;/strong&gt;&lt;/span&gt; | &lt;span&gt;🎙 Speaking Time: &lt;strong&gt;50s&lt;/strong&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="speaking-timer-widget"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timer-phase" id="spk-phase-2"&gt;Phase: Ready&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timer-countdown" id="spk-clock-2"&gt;00:40&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="spk-start-2" class="btn-primary"&gt;▶ Begin Prep &amp; Record Sequence&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="recording-studio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;audio id="audio-playback-2" controls class="audio-preview hidden"&gt;&lt;/audio&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;textarea id="transcript-2" class="transcript-input" placeholder="Transcript will populate when speaking starts..."&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-copy" id="btn-copy-speak2"&gt;📋 Copy for Feedback&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;!-- Speaking Act 3 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;div id="speak-act3" class="activity-content hidden"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="prompt-box"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;h3&gt;Task 3: Extended Debate (4 Follow-up Questions)&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;p&gt;Defend your stance on digital privacy and corporate accountability.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timing-rules"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span&gt;⏱ Prep Time: &lt;strong&gt;45s&lt;/strong&gt;&lt;/span&gt; | &lt;span&gt;🎙 Speaking Time: &lt;strong&gt;2:00 (120s)&lt;/strong&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">          </span></p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="debate-questions"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h4&gt;Follow-up Questions to Address:&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;To what extent should individuals be held responsible for protecting their own data online?&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Are monetary fines effective deterrents for tech conglomerates that violate privacy?&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;How might strict privacy laws impact technological innovation?&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">              </span>&lt;li&gt;Do you foresee a future where complete digital anonymity is achievable?&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/ol&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="speaking-timer-widget"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timer-phase" id="spk-phase-3"&gt;Phase: Ready&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;div class="timer-countdown" id="spk-clock-3"&gt;00:45&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button id="spk-start-3" class="btn-primary"&gt;▶ Begin Prep &amp; Debate Sequence&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="recording-studio"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;audio id="audio-playback-3" controls class="audio-preview hidden"&gt;&lt;/audio&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;textarea id="transcript-3" class="transcript-input" placeholder="Debate transcript..."&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">          </span>&lt;button class="btn-copy" id="btn-copy-speak3"&gt;📋 Copy for Feedback&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/main&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;footer class="app-footer"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;AI Foundry English Coach — C1 | Built for Gio | Designed for Oxford Test of English Advanced Preparation&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;script src="script.js"&gt;&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+  <!-- Header Section -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand">
+        <h1>AI Foundry English Coach <span>— C1</span></h1>
+        <span class="badge">Independent C1 practice</span>
+      </div>
+      <div class="user-welcome">
+        <p>Welcome back, <strong>Gio</strong>! Ready to master the Oxford Test of English Advanced?</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="main-container">
+    
+    <!-- Navigation Tabs -->
+    <nav class="module-nav" aria-label="Skill Modules">
+      <button class="nav-btn active" data-module="listening">🎧 Listening</button>
+      <button class="nav-btn" data-module="reading">📖 Reading</button>
+      <button class="nav-btn" data-module="writing">✍️ Writing</button>
+      <button class="nav-btn" data-module="speaking">🎙️ Speaking</button>
+    </nav>
+
+    <!-- Global Controls: Mode Toggle & Progress -->
+    <section class="controls-bar">
+      <div class="mode-selector">
+        <label class="toggle-label">Mode:</label>
+        <button id="mode-practice-btn" class="mode-btn active">Practice Mode (Hints)</button>
+        <button id="mode-timed-btn" class="mode-btn">Timed Challenge</button>
+      </div>
+      <div class="progress-display">
+        <span>Session Score: <strong id="global-score">0</strong> pts</span>
+      </div>
+    </section>
+
+    <!-- Module 1: Listening -->
+    <section id="module-listening" class="module-card active">
+      <header class="module-header">
+        <h2>Listening Module</h2>
+        <p>Practice short talks, note completion, and speaker matching on complex topics.</p>
+      </header>
+
+      <div class="activity-selector">
+        <button class="act-tab active" data-target="list-act1">Part 1: Note Completion</button>
+        <button class="act-tab" data-target="list-act2">Part 2: Multiple Matching</button>
+      </div>
+
+      <!-- Listening Act 1 -->
+      <div id="list-act1" class="activity-content active">
+        <div class="timer-banner hidden" id="timer-list-1">Time Left: <span class="time-val">--:--</span></div>
+        <div class="audio-player-box">
+          <button id="btn-play-list1" class="btn-primary">▶ Play Lecture Audio</button>
+          <button id="btn-script-list1" class="btn-secondary">📜 View Transcript (Fallback)</button>
+          <span class="audio-plays-count" id="plays-list1">Plays remaining: 2</span>
+        </div>
+        
+        <div id="script-box-list1" class="transcript-box hidden">
+          <h4>Audio Script — Lecture on AI in Higher Education</h4>
+          <p><em>"While traditionalists express valid concerns regarding academic integrity in the era of generative AI, higher education institutions must pivot from outright prohibition toward algorithmic literacy. Integrating large language models into research methodology allows undergraduates to synthesize vast datasets rapidly. However, the cognitive heavy lifting—critical evaluation, contextual nuance, and ethical framing—remains uniquely human. Universities that fail to adapt risk producing graduates ill-equipped for automated workplaces."</em></p>
+        </div>
+
+        <div class="exercise-body">
+          <h3>Complete the lecture notes with 1-3 words:</h3>
+          <ol class="fill-gaps-list">
+            <li>Instead of banning AI, universities must focus on fostering <input type="text" id="gap1" class="input-gap" placeholder="Type answer..."> among students.</li>
+            <li>Generative AI models enable undergraduates to quickly <input type="text" id="gap2" class="input-gap" placeholder="Type answer..."> large volumes of data.</li>
+            <li>Critical evaluation, ethical framing, and contextual nuance represent the necessary <input type="text" id="gap3" class="input-gap" placeholder="Type answer..."> that humans provide.</li>
+          </ol>
+          
+          <div class="hint-box hidden" id="hint-list1">
+            💡 <strong>Hint:</strong> Listen for keywords like "pivot", "synthesize", and "cognitive heavy lifting".
+          </div>
+
+          <div class="actions">
+            <button class="btn-hint" id="btn-hint-list1">Get Hint</button>
+            <button class="btn-submit" id="btn-sub-list1">Submit Answers</button>
+          </div>
+          <div class="feedback-panel hidden" id="fb-list1"></div>
+        </div>
+      </div>
+
+      <!-- Listening Act 2 -->
+      <div id="list-act2" class="activity-content hidden">
+        <div class="audio-player-box">
+          <button id="btn-play-list2" class="btn-primary">▶ Play Dialogue Audio</button>
+          <button id="btn-script-list2" class="btn-secondary">📜 View Transcript (Fallback)</button>
+          <span class="audio-plays-count" id="plays-list2">Plays remaining: 2</span>
+        </div>
+
+        <div id="script-box-list2" class="transcript-box hidden">
+          <h4>Audio Script — Dialogue on Hybrid Work Dynamics</h4>
+          <p><strong>Speaker A (Elena):</strong> "Hybrid models sound ideal on paper, but they frequently erode team cohesion. Asynchronous communication often breeds ambiguity, leaving junior staff without immediate mentorship."</p>
+          <p><strong>Speaker B (Marcus):</strong> "I disagree regarding cohesion. The autonomy gained drastically enhances mental well-being and productivity. Mentorship simply requires intentional digital structure rather than proximity."</p>
+        </div>
+
+        <div class="exercise-body">
+          <h3>Match the speaker to the statement:</h3>
+          <div class="matching-item">
+            <p>1. Believes remote flexibility boosts performance and well-being when given trust.</p>
+            <select id="match1" class="select-input">
+              <option value="">-- Select Speaker --</option>
+              <option value="A">Speaker A (Elena)</option>
+              <option value="B">Speaker B (Marcus)</option>
+            </select>
+          </div>
+          <div class="matching-item">
+            <p>2. Expresses concern about the lack of spontaneous guidance for newer employees.</p>
+            <select id="match2" class="select-input">
+              <option value="">-- Select Speaker --</option>
+              <option value="A">Speaker A (Elena)</option>
+              <option value="B">Speaker B (Marcus)</option>
+            </select>
+          </div>
+
+          <div class="actions">
+            <button class="btn-submit" id="btn-sub-list2">Submit Matching</button>
+          </div>
+          <div class="feedback-panel hidden" id="fb-list2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Module 2: Reading -->
+    <section id="module-reading" class="module-card hidden">
+      <header class="module-header">
+        <h2>Reading Module</h2>
+        <p>Master text structure, gapped sentences, and high-level inference analysis.</p>
+      </header>
+
+      <div class="activity-selector">
+        <button class="act-tab active" data-target="read-act1">Part 1: Gapped Text</button>
+        <button class="act-tab" data-target="read-act2">Part 2: Stance & Inference</button>
+      </div>
+
+      <!-- Reading Act 1 -->
+      <div id="read-act1" class="activity-content active">
+        <div class="passage-box">
+          <h3>The Surveillance Paradox in Modern Social Media</h3>
+          <p>Modern digital platforms offer unprecedented connectivity, yet they extract a steep toll on individual privacy. Users willingly trade personal data for convenience and social validation. <span class="gap-placeholder">[ Gap 1 ]</span>. Consequently, privacy policies have expanded into unreadable legalistic documents designed to obfuscate rather than inform.</p>
+          <p>Regulatory frameworks such as GDPR attempt to curb corporate overreach. <span class="gap-placeholder">[ Gap 2 ]</span>. Without fundamental changes in business models, data monetization will remain the dominant digital standard.</p>
+        </div>
+
+        <div class="options-container">
+          <h4>Select the sentence that fits each gap:</h4>
+          
+          <div class="gap-selection">
+            <label><strong>Gap 1:</strong></label>
+            <select id="read-gap1" class="select-input">
+              <option value="">-- Choose sentence --</option>
+              <option value="A">A) This transactional relationship normalized the monetization of private behavior.</option>
+              <option value="B">B) Social media algorithms rarely focus on targeted advertising.</option>
+              <option value="C">C) Digital detox programs have become mandatory across tech firms.</option>
+            </select>
+          </div>
+
+          <div class="gap-selection">
+            <label><strong>Gap 2:</strong></label>
+            <select id="read-gap2" class="select-input">
+              <option value="">-- Choose sentence --</option>
+              <option value="A">A) However, enforcement mechanisms often lag behind rapid technological advancements.</option>
+              <option value="B">B) Therefore, users stop using smartphones entirely in modern cities.</option>
+              <option value="C">C) These platforms guarantee total transparency without commercial intent.</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="hint-box hidden" id="hint-read1">
+          💡 <strong>Hint:</strong> Look for pronoun references like "This transactional relationship" linking back to trading data for convenience.
+        </div>
+
+        <div class="actions">
+          <button class="btn-hint" id="btn-hint-read1">Get Hint</button>
+          <button class="btn-submit" id="btn-sub-read1">Check Answers</button>
+        </div>
+        <div class="feedback-panel hidden" id="fb-read1"></div>
+      </div>
+
+      <!-- Reading Act 2 -->
+      <div id="read-act2" class="activity-content hidden">
+        <div class="passage-box">
+          <h3>Author Stance: Technological Determinism vs. Human Agency</h3>
+          <p><em>"To argue that technology unilaterally dictates societal evolution is to succumb to a defeatist philosophy. While generative algorithms redefine industry standards, their trajectory remains tethered to policy decisions, ethical constraints, and collective consumer choices. Algorithmic efficiency must not be conflated with inevitability."</em></p>
+        </div>
+
+        <div class="mcq-container">
+          <p class="question-text"><strong>1. What is the author's primary intention in this passage?</strong></p>
+          <label class="radio-option"><input type="radio" name="read-mcq1" value="A"> A) To warn against using generative algorithms in corporate settings.</label>
+          <label class="radio-option"><input type="radio" name="read-mcq1" value="B"> B) To argue that human decisions and policies still control technological progress.</label>
+          <label class="radio-option"><input type="radio" name="read-mcq1" value="C"> C) To advocate for total automation of regulatory policymaking.</label>
+
+          <p class="question-text"><strong>2. What does the phrase "conflated with inevitability" imply?</strong></p>
+          <label class="radio-option"><input type="radio" name="read-mcq2" value="A"> A) People wrongly assume fast algorithmic progress cannot be directed or stopped.</label>
+          <label class="radio-option"><input type="radio" name="read-mcq2" value="B"> B) Technology is guaranteed to solve all economic challenges automatically.</label>
+          <label class="radio-option"><input type="radio" name="read-mcq2" value="C"> C) Efficiency should be the sole metric for evaluating software.</label>
+        </div>
+
+        <div class="actions">
+          <button class="btn-submit" id="btn-sub-read2">Check Answers</button>
+        </div>
+        <div class="feedback-panel hidden" id="fb-read2"></div>
+      </div>
+    </section>
+
+    <!-- Module 3: Writing -->
+    <section id="module-writing" class="module-card hidden">
+      <header class="module-header">
+        <h2>Writing Module</h2>
+        <p>Develop high-level academic essays and synthesis texts under official timing constraints.</p>
+      </header>
+
+      <div class="activity-selector">
+        <button class="act-tab active" data-target="write-act1">Part 1: Essay (220–280 words)</button>
+        <button class="act-tab" data-target="write-act2">Part 2: Synthesis (80–100 words)</button>
+      </div>
+
+      <!-- Writing Act 1 -->
+      <div id="write-act1" class="activity-content active">
+        <div class="prompt-box">
+          <h3>Task: Opinion Essay</h3>
+          <p><strong>Prompt:</strong> Some argue that the widespread implementation of AI tools in higher education undermines intellectual independence. Write an essay evaluating this view. You must use at least <strong>two</strong> of the following points:</p>
+          <ul>
+            <li>Automated critical analysis vs. personal research effort</li>
+            <li>Equal access to learning resources</li>
+            <li>The risk of over-reliance on automated summaries</li>
+          </ul>
+          <div class="task-meta">⏱ Target Time: <strong>30:00</strong> | Target Length: <strong>220–280 words</strong></div>
+        </div>
+
+        <div class="editor-area">
+          <div class="timer-display" id="timer-write1">Time Remaining: <span>30:00</span></div>
+          <button class="btn-secondary" id="btn-start-write1">Start Timer</button>
+          <textarea id="text-write1" class="essay-input" placeholder="Type your C1 essay here..."></textarea>
+          <div class="editor-footer">
+            <span class="word-count" id="wc-write1">Word Count: 0 words</span>
+            <button class="btn-copy" id="btn-copy-write1">📋 Copy for Feedback</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn-submit" id="btn-sub-write1">Evaluate Writing</button>
+        </div>
+        <div class="feedback-panel hidden" id="fb-write1"></div>
+      </div>
+
+      <!-- Writing Act 2 -->
+      <div id="write-act2" class="activity-content hidden">
+        <div class="prompt-box">
+          <h3>Task: Synthesis Report</h3>
+          <p>Read the two sources below and write a synthesis summarizing the key arguments in <strong>80–100 words</strong> within <strong>20 minutes</strong>.</p>
+          
+          <div class="sources-grid">
+            <div class="source-card">
+              <h4>Source 1: Academic Textbook Excerpt</h4>
+              <p><em>"Remote working frameworks eliminate commuting stress and offer geographic flexibility. However, operational success hinges entirely on intentional communication architecture and asynchronous documentation to prevent professional isolation."</em></p>
+            </div>
+            <div class="source-card">
+              <h4>Source 2: Lecture Transcript</h4>
+              <p><em>"While flexibility is praised, long-term remote setups frequently erode informal networking and serendipitous innovation. Without physical proximity, organic mentorship becomes difficult to sustain."</em></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="editor-area">
+          <div class="timer-display" id="timer-write2">Time Remaining: <span>20:00</span></div>
+          <button class="btn-secondary" id="btn-start-write2">Start Timer</button>
+          <textarea id="text-write2" class="essay-input" placeholder="Type your 80-100 word synthesis..."></textarea>
+          <div class="editor-footer">
+            <span class="word-count" id="wc-write2">Word Count: 0 words</span>
+            <button class="btn-copy" id="btn-copy-write2">📋 Copy for Feedback</button>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button class="btn-submit" id="btn-sub-write2">Evaluate Synthesis</button>
+        </div>
+        <div class="feedback-panel hidden" id="fb-write2"></div>
+      </div>
+    </section>
+
+    <!-- Module 4: Speaking -->
+    <section id="module-speaking" class="module-card hidden">
+      <header class="module-header">
+        <h2>Speaking Module</h2>
+        <p>Record your answers, review auto-transcriptions, and compare with model C1 responses.</p>
+      </header>
+
+      <div class="activity-selector">
+        <button class="act-tab active" data-target="speak-act1">Part 1: Voicemail Message</button>
+        <button class="act-tab" data-target="speak-act2">Part 2: Oral Synthesis</button>
+        <button class="act-tab" data-target="speak-act3">Part 3: Extended Debate</button>
+      </div>
+
+      <!-- Speaking Act 1 -->
+      <div id="speak-act1" class="activity-content active">
+        <div class="prompt-box">
+          <h3>Task 1: Delicate Situation Voicemail</h3>
+          <p>Leave a voicemail for a project partner explaining tactfully that their reliance on generative AI for a joint proposal has introduced factual inaccuracies that need immediate revision before tomorrow's client presentation.</p>
+        </div>
+
+        <div class="recording-studio">
+          <div class="recorder-controls">
+            <button id="rec-btn-1" class="btn-record">🎙️ Start Recording</button>
+            <button id="stop-btn-1" class="btn-stop" disabled>⏹️ Stop</button>
+            <span class="recording-status" id="rec-status-1">Status: Idle</span>
+          </div>
+          <audio id="audio-playback-1" controls class="audio-preview hidden"></audio>
+          
+          <div class="transcription-box">
+            <label>Editable Speech-to-Text Transcript:</label>
+            <textarea id="transcript-1" class="transcript-input" placeholder="Your live transcription will appear here. You can edit it manually if needed..."></textarea>
+          </div>
+
+          <div class="actions-inline">
+            <button class="btn-copy" id="btn-copy-speak1">📋 Copy for Feedback</button>
+          </div>
+
+          <div class="model-answer-box">
+            <button id="btn-model-1" class="btn-secondary">🎧 Play Model Answer (C1 Standard)</button>
+            <div id="model-text-1" class="model-text hidden">
+              <p><strong>C1 Exemplar:</strong> <em>"Hi Alex, I hope you're having a productive afternoon. I was reviewing the draft for tomorrow's client presentation, and while the structure looks remarkably sleek, I noticed a few factual discrepancies in the market analysis section. It appears some AI-generated statistics were included without verification. Given what's at stake, could we spend 15 minutes this evening aligning those figures? I'm confident we can polish it quickly. Give me a call when you see this."</em></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Speaking Act 2 -->
+      <div id="speak-act2" class="activity-content hidden">
+        <div class="prompt-box">
+          <h3>Task 2: Oral Synthesis</h3>
+          <p>Synthesize two opinions regarding mandatory data privacy regulations for social networks.</p>
+          <div class="timing-rules">
+            <span>⏱ Prep Time: <strong>40s</strong></span> | <span>🎙 Speaking Time: <strong>50s</strong></span>
+          </div>
+        </div>
+
+        <div class="speaking-timer-widget">
+          <div class="timer-phase" id="spk-phase-2">Phase: Ready</div>
+          <div class="timer-countdown" id="spk-clock-2">00:40</div>
+          <button id="spk-start-2" class="btn-primary">▶ Begin Prep & Record Sequence</button>
+        </div>
+
+        <div class="recording-studio">
+          <audio id="audio-playback-2" controls class="audio-preview hidden"></audio>
+          <textarea id="transcript-2" class="transcript-input" placeholder="Transcript will populate when speaking starts..."></textarea>
+          <button class="btn-copy" id="btn-copy-speak2">📋 Copy for Feedback</button>
+        </div>
+      </div>
+
+      <!-- Speaking Act 3 -->
+      <div id="speak-act3" class="activity-content hidden">
+        <div class="prompt-box">
+          <h3>Task 3: Extended Debate (4 Follow-up Questions)</h3>
+          <p>Defend your stance on digital privacy and corporate accountability.</p>
+          <div class="timing-rules">
+            <span>⏱ Prep Time: <strong>45s</strong></span> | <span>🎙 Speaking Time: <strong>2:00 (120s)</strong></span>
+          </div>
+          
+          <div class="debate-questions">
+            <h4>Follow-up Questions to Address:</h4>
+            <ol>
+              <li>To what extent should individuals be held responsible for protecting their own data online?</li>
+              <li>Are monetary fines effective deterrents for tech conglomerates that violate privacy?</li>
+              <li>How might strict privacy laws impact technological innovation?</li>
+              <li>Do you foresee a future where complete digital anonymity is achievable?</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="speaking-timer-widget">
+          <div class="timer-phase" id="spk-phase-3">Phase: Ready</div>
+          <div class="timer-countdown" id="spk-clock-3">00:45</div>
+          <button id="spk-start-3" class="btn-primary">▶ Begin Prep & Debate Sequence</button>
+        </div>
+
+        <div class="recording-studio">
+          <audio id="audio-playback-3" controls class="audio-preview hidden"></audio>
+          <textarea id="transcript-3" class="transcript-input" placeholder="Debate transcript..."></textarea>
+          <button class="btn-copy" id="btn-copy-speak3">📋 Copy for Feedback</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>AI Foundry English Coach — C1 | Built for Gio | Designed for Oxford Test of English Advanced Preparation</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
